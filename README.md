@@ -6,6 +6,7 @@
 - Typescript
 - Node JS
 - Express JS
+- MySQL
 - MongoDB
 - RedisDB
 - Socket io
@@ -37,9 +38,12 @@ yarn install
 PORT=8000
 ORIGIN=['http://localhost:3000']
 
-#MongoDB
-NODE_ENV=
-DB_URL=''
+# Database (MySQL)
+DB_HOST=localhost  
+DB_USER=root  
+DB_PASSWORD=your_password  
+DB_NAME=mydatabase  
+DB_PORT=3306 
 
 #Cloudinary
 CLOUD_NAME=
@@ -48,6 +52,10 @@ CLOUD_SECRET_KEY=
 
 #Upstash
 REDIS_URL=
+
+#MongoDB
+NODE_ENV=
+DB_URL=''
 
 # JWT
 ACTIVATION_SECRET=
